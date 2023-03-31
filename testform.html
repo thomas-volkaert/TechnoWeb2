@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="utf-8"/>
+        <title>formulaire/wiki_manga</title>
+        <link rel="stylesheet" type="text/css" media="all" href="base.css" />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="titre_principale">
+                <div class="titre_principale_taille">
+                    <img src="images/logo_site.PNG" alt="Wiki-Manga">
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index_manga.html">Manga</a></li>
+                <li><a href="index_anime.html">Anime</a></li>
+                <li><a href="index_film.html">Film</a></li>
+                <li><a href="index_jeuxvideo.html">Jeux Video</a></li>
+                <li><a href="index.html">Menu</a></li>
+                <li class="animation dynamique"></li>
+            </ul>
+        </nav> 
+        <form action="htbin/register.py" method="post">
+            <p class="titre_categorie"> Formulaire d'inscription : <BR> (tant que c'est rouge vous ne pouvez rien envoyer !)</p>
+            <div>
+                <label for="lastname">Nom :</label>
+                <input type="text" id="lastname" name="nom" required>
+            </div>
+            <div>
+                <label for="firstname">Prenom :</label>
+                <input type="text" id="firstname" name="prenom" required>
+            </div>
+            <div>
+                <label for="birthdate">Date (JJ/MM/AAAA) :</label>
+                <input type="text" id="birthdate" name="date" >
+            </div>
+            <div>
+                <label for="username">Nom Utilisateur :</label>
+                <input type="text" id="username" name="Nom_Utilisateur" required>
+            </div>
+            <div>
+                <label for="userpwd">Mot de passe : </label>
+                <input type="text" id="userpwd" name="Mot_de_passe" required>
+            </div>
+            <div>
+                <label for="useremail">Email :</label>
+                <input type="text" id="useremail" name="email" required>
+            </div>
+            <div>
+                <button type="submit">Envoyer les donnes</button>
+            </div>
+        </form>
+        <script type="text/javascript" src="script.js"> </script>
+    </body>
+    
+</html>

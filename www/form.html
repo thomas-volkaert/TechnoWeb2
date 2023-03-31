@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Index </title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <section class="top-page">
+        <div id="navbar">
+            <img src="images/logo.png" alt="Logo">
+			<a href ="login.html">Se connecter</a>
+            <a href ="form.html">S'inscrire</a>
+            <a href ="contact.html">Contact</a> 
+            <a href ="index.html">Accueil</a> 
+            
+            
+            <p>Nom du site</p>
+              
+        </div>
+
+        <form action="/htbin/register.py" method="post">
+			<ul>
+				<li>
+					<label for="lastname">Nom:</label>
+					<input type="text" id="nom" name="lastname" required/>
+				</li>
+				<li>
+					<label for="firstname">Prénom:</label>
+					<input type="text" id="prenom" name="firstname" required/>
+				</li>
+				<li>
+					<label for="birthdate">Date de naissance:</label>
+					<input type="text" id="dateN" name="birthdate" />
+				</li>
+                <li>
+					<label for="username">Nom d'utilisateur:</label>
+					<input type="text" id="usrname" name="username" required/>
+				</li>
+                <li>
+					<label for="userpwd">Mot de passe (8 Caractères minimum):</label>
+					<input type="text" id="pwd" name="userpwd" required/>
+				</li>
+                <li>
+					<label for="usermail">E-mail:</label>
+					<input type="text" id="email" name="useremail" required/>
+				</li>
+				<li class="button">
+					<input type="submit" value="Valider"/>
+                    <input type="reset" />
+				</li>
+			</ul>
+		</form>
+        <script src="js/navbar.js"></script>
+		<script type="text/javascript" src="js/form.js"> </script>
+    </section>    
+</body>
+</html><!DOCTYPE html>
